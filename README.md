@@ -20,17 +20,17 @@ $ composer update
 Registre o ServiceProvider no array ```providers``` dentro do arquivo ```config/app.php```:
 ```php
 'providers' => [
-	// ...
+    // ...
     EltonInacio\ValidadorCpfCnpj\CpfCnpjServiceProvider::class
 ]
 ```
 #### Exemplo de uso
 ```php
-$this->validade($request, [
+$this->validate($request, [
     'cpf'       => 'cpf',
     'cnpj'      => 'cnpj',
     'cpfcnpj'   => 'cpfcnpj'
-])
+]);
 ```
 ou
 ```php
